@@ -21,6 +21,6 @@ function tweetIt() {
 			console.log('Something went wrong!');
 		} else {
 			console.log('It worked!');
-		}
+		}//Fiz urself heroku
 	}
 }
