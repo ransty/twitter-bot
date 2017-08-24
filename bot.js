@@ -9,9 +9,9 @@ tweetIt();
 setInterval(tweetIt, 60*5*1000);
 
 function tweetIt() {
-	var r = Math.floor(Math.random()*100);
+	var r = Math.floor(Math.random()*1000);
 	var tweet = {
-		status: 'random number ' + r
+		status: 'random number ' + r + ' #randomgenerator'
 	}
 	
 	T.post('statuses/update', tweet, tweeted);
