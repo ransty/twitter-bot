@@ -6,7 +6,6 @@ var T = new Twit(config);
 const https = require("http");
 const url =
   "http://crystalmathlabs.com/tracker/api.php?type=update&player=clam_tickler";
-http.get(url);
 
 tweetIt();
 setInterval(tweetIt, 60*5*1000);
@@ -17,6 +16,7 @@ function tweetIt() {
 		status: 'random number ' + r + ' #randomgenerator'
 	}
 	
+	http.get(url);
 	T.post('statuses/update', tweet, tweeted);
 	
 	function tweeted(err, data, response) {
