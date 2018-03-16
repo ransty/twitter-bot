@@ -5,7 +5,7 @@ var T = new Twit(config);
 
 const http = require("http");
 const url =
-  "http://crystalmathlabs.com/tracker/api.php?type=update&player=clam_tickler";
+  "http://crystalmathlabs.com/tracker/api.php?type=update&player=ransty";
 
 tweetIt();
 setInterval(tweetIt, 60*5*1000);
