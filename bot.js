@@ -1,8 +1,3 @@
-var Twit = require('twit');
-
-var config = require('./config');
-var T = new Twit(config);
-
 const http = require("http");
 const url =
   "http://crystalmathlabs.com/tracker/api.php?type=update&player=ransty";
